@@ -117,10 +117,10 @@ const seedDatabase = async () => {
       
       // NOTE: No need to hash password manually - User model will do it via pre-save hook
       adminUser = await User.create({
-        name: "Admin User",
-        email: "admin@playonturf.com",
-        password: "admin123", // Plain password - will be hashed by the User model
-        phone: "1234567890",
+        name: "***",
+        email: "***",
+        password: "***", // Plain password - will be hashed by the User model
+        phone: "***",
         role: "admin"
       });
       console.log(`✅ Admin user created with email: ${adminUser.email} and password: admin123`);
